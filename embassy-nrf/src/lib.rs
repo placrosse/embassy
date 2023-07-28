@@ -57,6 +57,8 @@ pub mod pwm;
 pub mod qdec;
 #[cfg(any(feature = "nrf52840", feature = "_nrf5340-app"))]
 pub mod qspi;
+#[cfg(feature = "nrf52805")]
+pub mod radio;
 #[cfg(not(any(feature = "_nrf5340-app", feature = "_nrf9160")))]
 pub mod rng;
 #[cfg(not(any(feature = "nrf52820", feature = "_nrf5340-net")))]
